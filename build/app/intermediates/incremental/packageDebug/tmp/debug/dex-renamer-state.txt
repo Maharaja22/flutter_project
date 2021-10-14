@@ -1,0 +1,4 @@
+#Thu Oct 14 13:54:28 IST 2021
+base.0=/home/jeyarajjr/Desktop/maharaj/maharaj/maharaj_project/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
