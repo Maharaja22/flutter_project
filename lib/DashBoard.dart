@@ -189,7 +189,7 @@ class _DashBoardState extends State<DashBoard> {
                                         color: Colors.white,
                                       ),
                                       onPressed: () {
-                                        _altbox();
+                                        showAlertDialog(context);
                                       },
                                     ),
                                   ),
@@ -224,7 +224,7 @@ class _DashBoardState extends State<DashBoard> {
                                         color: Colors.white,
                                       ),
                                       onPressed: () {
-                                        _altbox();
+                                        showAlertDialog(context);
                                       },
                                     ),
                                   ),
@@ -268,7 +268,7 @@ class _DashBoardState extends State<DashBoard> {
                                       color: Colors.white,
                                     ),
                                     onPressed: () {
-                                      _altbox();
+                                      showAlertDialog(context);
                                     },
                                   ),
                                 ),
@@ -303,7 +303,7 @@ class _DashBoardState extends State<DashBoard> {
                                       color: Colors.white,
                                     ),
                                     onPressed: () {
-                                      _altbox();
+                                      showAlertDialog(context);
                                     },
                                   ),
                                 ),
@@ -338,7 +338,7 @@ class _DashBoardState extends State<DashBoard> {
                                       color: Colors.white,
                                     ),
                                     onPressed: () {
-                                      _altbox();
+                                      showAlertDialog(context);
                                     },
                                   ),
                                 ),
@@ -364,23 +364,21 @@ class _DashBoardState extends State<DashBoard> {
     );
   }
 
-  _altbox() {
-    showAlertDialog(BuildContext context) {
-      // set up the button
-      Widget okButton = Lottie.asset(
-        'anim/ainma.json',
-        repeat: false,
-        reverse: false,
-        animate: false,
-      );
+  showAlertDialog(BuildContext context) async {
+    // set up the button
+    Widget okButton = Lottie.asset(
+      'anim/ainma.json',
+      repeat: false,
+      reverse: false,
+      animate: false,
+    );
 
-      // show the dialog
-      showDialog(
-        context: context,
-        builder: (BuildContext context) {
-          return okButton;
-        },
-      );
-    }
+    // show the dialog
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return okButton;
+      },
+    );
   }
 }
